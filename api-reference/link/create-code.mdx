@@ -1,0 +1,29 @@
+---
+title: "Create Code"
+openapi: "POST /v2/link/code/create"
+---
+
+Used for Bazinga iOS Apps to share Apple HealthKit with you. Please refer [here](/wearables/vital-app/introduction) for more information.
+
+<RequestExample>
+
+```bash Bash
+curl --request POST \
+     --url {{BASE_URL}}/v2/link/code/create\?user_id\=1875c190-0cd6-46c1-8670-5b56a7794b78 \
+     --header 'Accept: application/json' \
+     --header 'Content-Type: application/json' \
+     --header 'x-bazinga-api-key: <API_KEY>'
+```
+
+</RequestExample>
+
+<ResponseExample>
+
+```json Example
+{
+  "code": "skus17922ffe",
+  "exchange_url": "bazinga://bazinga?code=skus17922ffe"
+}
+```
+
+</ResponseExample>
